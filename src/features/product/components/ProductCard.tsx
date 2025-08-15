@@ -16,20 +16,20 @@ export const ProductCard = ({ product, className }: Props) => {
   return (
     <div
       className={cn(
-        " w-full h-fit flex flex-col items-center gap-[15px] shrink-0 relative group",
+        " w-full sm:max-w-[291px] max-w-[164px] h-fit flex flex-col items-center sm:gap-[15px] gap-[7px] shrink-0 relative group",
         className
       )}
     >
       {/* badges */}
       {product.badges.length > 0 && (
-        <div className=" absolute top-[15px] left-[15px] z-10 flex flex-col gap-[7px]">
+        <div className=" absolute sm:top-[15px] top-[13px] sm:left-[15px] left-[8px] z-10 flex flex-col gap-[7px]">
           <ListItems
             items={product.badges}
             render={(badge, index) => (
               <div
                 key={index}
                 className={cn(
-                  " w-fit h-[21px] px-[13px] flex items-center justify-center rounded-[10px] font-medium text-[15px] leading-[130%] text-white",
+                  " w-fit sm:h-[21px] px-[8px] sm:px-[13px] sm:py-[2.5px] flex items-center justify-center rounded-[10px] font-medium sm:text-[15px] text-[10px] leading-[130%] text-white",
                   badge === "hit" && "bg-[#C3A484]",
                   badge === "sale" && "bg-[#D86767]",
                   badge === "new" && "bg-[#8AC384]"
@@ -42,8 +42,8 @@ export const ProductCard = ({ product, className }: Props) => {
         </div>
       )}
 
-      <button className=" w-fit h-fit absolute top-[15px] right-[15px] z-10">
-        <HeartIcon className=" size-[20px] text-gray-300" />
+      <button className=" w-fit h-fit absolute sm:top-[15px] top-[8.5px] right-[12px] sm:right-[15px] z-10">
+        <HeartIcon className=" sm:size-[20px] size-[11px] text-gray-300" />
       </button>
 
       <div className=" w-full aspect-square flex items-center justify-center bg-gray-50 relative">
@@ -55,43 +55,45 @@ export const ProductCard = ({ product, className }: Props) => {
         </button>
       </div>
 
-      <div className=" w-full h-fit flex flex-col items-center text-center px-[12px]">
-        <p className=" text-mid-black font-medium leading-[130%] text-[15px]">
+      <div className=" w-full h-fit flex flex-col items-center text-center sm:px-[12px]">
+        <p className=" text-mid-black font-medium sm:leading-[130%] sm:text-[15px] text-[10px] leading-[100%]">
           {product.category}
         </p>
-        <p className=" mt-[8px] font-bold text-[14px] leading-[135%] uppercase">
+        <p className=" mt-[8px] sm:font-bold font-semibold text-[14px] sm:leading-[135%] leading-[16px] sm:uppercase">
           Увлажняющая ночная маска для лица с экстрактом банана Magic Food
           Banana
         </p>
 
         <div className=" w-fit h-fit flex items-center gap-0.5 mt-[12px]">
-          <StarIcon className=" size-[14px] text-orange-500" />
-          <StarIcon className=" size-[14px] text-orange-500" />
-          <StarIcon className=" size-[14px] text-orange-500" />
-          <StarIcon className=" size-[14px] text-orange-500" />
-          <StarIcon className=" size-[14px] text-orange-100" />
+          <StarIcon className=" sm:size-[14px] size-[8px] text-orange-500" />
+          <StarIcon className=" sm:size-[14px] size-[8px] text-orange-500" />
+          <StarIcon className=" sm:size-[14px] size-[8px] text-orange-500" />
+          <StarIcon className=" sm:size-[14px] size-[8px] text-orange-500" />
+          <StarIcon className=" sm:size-[14px] size-[8px] text-orange-100" />
         </div>
 
-        <div className=" mt-[12px] w-fit h-fit flex items-center">
-          <p className=" text-[15px] leading-[100%] font-semibold">
+        <div className=" mt-[12px] w-fit h-fit flex items-center sm:flex-row flex-col">
+          <p className=" sm:text-[15px] text-[14px] leading-[100%] font-semibold">
             {product.price} сум
           </p>
-          {product.dicountedPrice !== null && (
-            <p className=" line-through text-gray-300 text-[14px] leading-[100%] ml-[13px]">
-              {product.dicountedPrice} сум
-            </p>
-          )}
+          <div className=" w-fit h-fit flex items-center sm:mt-0 mt-[6px]">
+            {product.dicountedPrice !== null && (
+              <p className=" line-through text-gray-300 sm:text-[14px] text-[12px] leading-[100%] sm:ml-[13px]">
+                {product.dicountedPrice} сум
+              </p>
+            )}
 
-          {product.discountPercent !== null && (
-            <p
-              className={cn(
-                "text-orange-500 font-bold text-[13px] leading-[100%] ml-[8px]",
-                kalam.className
-              )}
-            >
-              -{product.discountPercent}%
-            </p>
-          )}
+            {product.discountPercent !== null && (
+              <p
+                className={cn(
+                  "text-orange-500 font-bold sm:text-[13px] text-[12px] leading-[100%] sm:ml-[8px] ml-[7px]",
+                  kalam.className
+                )}
+              >
+                -{product.discountPercent}%
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -13,20 +13,22 @@ export const Blog = () => {
         className=" w-full h-full object-cover absolute inset-0 -z-10"
         priority
       />
-      <div className=" centered-max-width flex items-center justify-between pt-[40px] pb-[41px] pl-[107px] relative">
+      <div className=" centered-max-width flex xl:items-center xl:justify-between xl:flex-row flex-col gap-y-[30px] 2xl:pt-[40px] pt-[20px] 2xl:pb-[41px] pb-[20px] 2xl:pl-[107px] pl-[21px] relative">
         <div className=" w-fit h-fit flex flex-col">
-          <p className=" text-[28px] font-semibold leading-[130%]">
-            Бьюти-блог от специалистов
+          <p className=" md:text-[28px] text-[24px] font-semibold md:leading-[130%] leading-[30px]">
+            Бьюти-блог
+            <br className="xs:hidden" /> от специалистов
             <br /> COSMO BOX
           </p>
 
-          <p className=" font-medium text-[16px] leading-[150%] mt-[15px] mb-[29px]">
+          <p className=" font-medium md:text-[16px] text-[14px] md:leading-[150%] leading-[20px] md:mt-[15px] md:mb-[29px] my-[20px]">
             Наши советы, лайфхаки, топы и гиды всё для красоты и<br />{" "}
             прекрасного самочувствия, а также полезные статьи по уходу
           </p>
 
-          <Button className=" w-fit h-[48px] text-[14px] font-semibold leading-[110%] px-[43px]">
-            Читать блог
+          <Button className=" md:w-fit w-[129px] md:h-[48px] h-[36px] md:text-[14px] text-[13px] font-semibold leading-[110%] px-[43px]">
+            <span className=" md:block hidden">Читать блог</span>
+            <span className=" md:hidden">Смотреть все</span>
           </Button>
         </div>
 
@@ -35,7 +37,7 @@ export const Blog = () => {
         {/* mask div */}
         <div
           draggable={false}
-          className=" w-[107px] h-[372px] absolute top-0 right-0 z-10 select-none pointer-events-none"
+          className=" w-[107px] h-[372px] absolute top-0 right-0 z-10 select-none pointer-events-none xl:block hidden"
         >
           <Image src={mask} alt="mask" className=" w-full h-full" />
         </div>

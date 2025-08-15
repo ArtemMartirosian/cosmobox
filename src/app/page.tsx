@@ -25,9 +25,9 @@ export default function page() {
         )}
       >
         <Hero />
-        <RoundedCategoriesCarousel />
+        {/* <RoundedCategoriesCarousel /> */}
 
-        <div className=" centered-max-width pl-[107px] pr-[46px]">
+        <div className=" centered-max-width 2xl:pl-[107px] pl-[19px] 2xl:pr-[46px]">
           <YourBeautyProducts />
           <HealtyHairProducts />
           <ForTheBodyProducts />
@@ -49,7 +49,7 @@ export default function page() {
 
         <Blog />
 
-        <div className=" w-full h-fit my-[60px] px-[25px]">
+        <div className=" w-full h-fit lg:my-[60px] mt-[24px] mb-[40px] lg:px-[25px] px-[21px]">
           <SocialContacts />
         </div>
       </div>

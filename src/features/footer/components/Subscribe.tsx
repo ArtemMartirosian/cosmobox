@@ -1,22 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Logo } from "@/icons/Logo";
 
 export const Subscribe = () => {
   return (
-    <div className=" w-full h-[110px] flex items-center justify-between">
-      <p className=" text-[18px] leading-[130%] font-semibold">
+    <div className=" w-full 2xl:h-[110px] h-[343px] flex items-center 2xl:justify-between 2xl:flex-row flex-col 2xl:pt-0 pt-[40px] 22xl:px-0 px-[20px] gap-y-[20px]">
+      <p className=" 2xl:text-[18px] text-[16px] leading-[130%] font-semibold 2xl:text-start text-center">
         Подписывайтесь на наши
-        <br /> новинки и секретные акции!
+        <br className=" 2xl:block hidden" /> новинки
+        <br className=" 2xl:hidden" /> и секретные акции!
       </p>
 
-      <div className=" w-fit h-fit flex gap-[23px]">
+      <div className=" 2xl:w-fit w-full h-fit flex 2xl:flex-row flex-col items-center 2xl:gap-[23px] gap-[20px]">
         <div className=" w-full max-w-[594px] flex items-center gap-[9px]">
           <input
             type="text"
-            className=" h-[48px] w-[397px] outline-none bg-white px-[20px] text-[14px] font-medium leading-[100%] placeholder:text-gray-300"
+            className=" 2xl:h-[48px] h-[44px] 2xl:w-[397px] w-full outline-none bg-white 2xl:px-[20px] px-[7px] text-[14px] font-medium leading-[100%] placeholder:text-gray-300"
             placeholder="email"
           />
-          <Button className=" h-[48px] w-[188px]">Подписаться</Button>
+          <Button className=" 2xl:h-[48px] h-[44px] 2xl:w-[188px] w-[111px] 2xl:text-[16px] text-[14px] leading-[110%] font-semibold">
+            Подписаться
+          </Button>
         </div>
 
         <div className=" w-fit h-fit flex items-start gap-[6px]">
@@ -40,6 +44,8 @@ export const Subscribe = () => {
           </label>
         </div>
       </div>
+
+      <Logo className=" w-[192px] h-[62px] mx-auto mt-[10px] 2xl:hidden" />
     </div>
   );
 };

@@ -5,10 +5,10 @@ import { TelegramIcon } from "@/icons/TelegramIcon";
 
 export const FooterContent = () => {
   return (
-    <div className=" w-full h-fit pt-[17px] pb-[55px] border-t border-[#E2E2E2] flex">
+    <div className=" w-full h-fit pt-[17px] pb-[55px] border-t border-[#E2E2E2] xl:flex hidden flex-row 3xl:px-0 px-[20px]">
       <div className=" w-fit flex flex-col items-center gap-[30px]">
         <Logo className=" w-[192px] h-[62px]" />
-        <div className=" w-fit h-fit flex items-center gap-[10px]">
+        <div className=" w-fit h-fit xl:flex hidden items-center gap-[10px]">
           <button className=" size-[38px] shrink-0 flex items-center justify-center border border-[#E2E2E2]">
             <InstagramIcon className=" size-[20px] text-primary-black" />
           </button>
@@ -21,7 +21,7 @@ export const FooterContent = () => {
         </div>
       </div>
 
-      <div className=" w-fit h-fit flex ml-[123px] mr-[167px] shrink-0">
+      <div className=" w-fit h-fit flex 3xl:ml-[123px] 2xl:ml-[103px] xl:ml-[43px] ml-[60px] 3xl:mr-[167px] 2xl:mr-[147px] xl:mr-[50px] mr-[70px] shrink-0">
         <div className=" w-fit h-fit flex flex-col gap-[25px]">
           <p className=" font-semibold text-[16px] leading-[100%]">Компания</p>
 

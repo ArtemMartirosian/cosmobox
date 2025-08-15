@@ -12,17 +12,26 @@ import {
   default as yourBodyImg3,
 } from "@/assets/deletable/image 1191.svg";
 
-import saleImg1 from "@/assets/deletable/image 1182.svg";
 import saleImg2 from "@/assets/deletable/Dr.RashelVitaminCCream 1 1.svg";
+import saleImg1 from "@/assets/deletable/image 1182.svg";
 import saleImg3 from "@/assets/deletable/image 1184.svg";
 
+import brandImg6 from "@/assets/brands/arnest.svg";
 import brandImg1 from "@/assets/brands/dr rashel logo.svg";
-import brandImg2 from "@/assets/brands/estelin.svg";
+import {
+  default as brandImg2,
+  default as brandImg7,
+} from "@/assets/brands/estelin.svg";
+import brandImg5 from "@/assets/brands/forest-clean.svg";
 import brandImg3 from "@/assets/brands/sowell.svg";
 import brandImg4 from "@/assets/brands/vesna.svg";
-import brandImg5 from "@/assets/brands/forest-clean.svg";
-import brandImg6 from "@/assets/brands/arnest.svg";
-import brandImg7 from "@/assets/brands/estelin.svg";
+
+import brandImgMobile6 from "@/assets/brands/arnest mobile.svg";
+import brandImgMobile1 from "@/assets/brands/dr rashel logo mobile.svg";
+import brandImgMobile2 from "@/assets/brands/estelin mobile.svg";
+import brandImgMobile5 from "@/assets/brands/forest clean mobile.svg";
+import brandImgMobile4 from "@/assets/brands/sowell mobile.svg";
+import brandImgMobile3 from "@/assets/brands/vesna mobile.svg";
 
 export const YOUR_BEAUTY_ITEMS = [
   {
@@ -197,4 +206,13 @@ export const OUR_BRANDS = [
   brandImg5,
   brandImg6,
   brandImg7,
+];
+
+export const OUR_BRANDS_MOBILE = [
+  brandImgMobile1,
+  brandImgMobile2,
+  brandImgMobile3,
+  brandImgMobile4,
+  brandImgMobile5,
+  brandImgMobile6,
 ];

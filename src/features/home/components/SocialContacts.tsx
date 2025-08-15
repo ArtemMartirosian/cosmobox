@@ -14,8 +14,8 @@ import { FacebookIcon } from "@/icons/FacebookIcon";
 
 export const SocialContacts = () => {
   return (
-    <div className=" w-full max-w-[1390px] h-[398px] mx-auto flex items-center justify-between bg-gray-50">
-      <div className=" w-fit h-fit py-[51px] pl-[82px] pr-[121px]">
+    <div className=" w-full max-w-[1390px] xl:h-[398px] h-fit mx-auto flex xl:items-center xl:justify-between xl:flex-row flex-col-reverse bg-gray-50">
+      <div className=" w-fit h-fit 3xl:py-[51px] 3xl:pl-[82px] 3xl:pr-[121px] p-[20px] pt-[34px]">
         <div className=" w-fit h-fit flex items-center">
           <Image src={sub1} alt="sub" className="" />
           <Image src={sub2} alt="sub" className=" -ml-[4px]" />
@@ -28,39 +28,40 @@ export const SocialContacts = () => {
           </div>
         </div>
 
-        <p className=" text-[28px] font-semibold leading-[120%] mt-[28px]">
+        <p className=" 2xl:text-[28px] text-[24px] font-semibold leading-[120%] mt-[28px]">
           Присоединяйтесь
           <br /> к нашему beauty-сообществу!
         </p>
-        <p className=" text-[16px] leading-[150%] font-medium mt-[16px]">
+        <p className=" 2xl:text-[16px] text-[14px] 2xl:leading-[150%] leading-[20px] font-medium 2xl:mt-[16px] mt-[20px]">
           Подписывайтесь на наши соцсети, чтобы первыми
-          <br /> узнавать о наших акциях, скидках новостях и новинках.
-          <br /> Не пропустите самое интересное!
+          <br className=" 2xl:block hidden" /> узнавать о наших акциях, скидках
+          новостях и новинках.
+          <br className=" 2xl:block hidden" /> Не пропустите самое интересное!
         </p>
 
-        <div className=" w-fit h-fit flex items-center gap-[15px] mt-[30px]">
-          <Button className=" w-[158px] h-[48px] gap-[13px]">
-            <InstagramIcon className=" size-[25px] text-white" />
+        <div className=" w-fit h-fit flex items-center 2xl:gap-[15px] gap-[13px] 2xl:mt-[30px] mt-[20px]">
+          <Button className=" 2xl:w-[158px] w-[140px] h-[48px] gap-[13px]">
+            <InstagramIcon className=" 2xl:size-[25px] size-[20px] text-white" />
             <div className=" w-fit h-fit flex items-center gap-[4px]">
-              <span className=" text-[15px] font-semibold leading-[110%]">
+              <span className=" 2xl:text-[15px] text-[13px] font-semibold leading-[110%]">
                 Instagram
               </span>
-              <ChevronRightIcon className=" size-[12px] text-white/60" />
+              <ChevronRightIcon className=" 2xl:size-[12px] size-[10px] text-white/60" />
             </div>
           </Button>
-          <Button className=" w-[159px] h-[48px] gap-[13px]">
-            <FacebookIcon className=" size-[25px] text-white" />
+          <Button className=" 2xl:w-[159px] w-[140px] h-[48px] gap-[13px]">
+            <FacebookIcon className=" 2xl:size-[25px] size-[20px] text-white" />
             <div className=" w-fit h-fit flex items-center gap-[4px]">
-              <span className=" text-[15px] font-semibold leading-[110%]">
+              <span className=" 2xl:text-[15px] text-[13px] font-semibold leading-[110%]">
                 Facebook
               </span>
-              <ChevronRightIcon className=" size-[12px] text-white/60" />
+              <ChevronRightIcon className=" 2xl:size-[12px] size-[10px] text-white/60" />
             </div>
           </Button>
         </div>
       </div>
 
-      <div className=" w-[685px] h-fit flex overflow-x-auto">
+      <div className=" xl:w-[685px] w-full xl:h-fit h-[398px] flex overflow-x-auto">
         <Image src={img1} alt="img1" className=" w-[343px]" />
         <Image src={img2} alt="img1" className=" w-[342px]" />
         <Image src={img1} alt="img1" className=" w-[343px]" />
