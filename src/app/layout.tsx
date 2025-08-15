@@ -1,3 +1,4 @@
+import { Footer } from "@/features/footer/components/Footer";
 import { Navbar } from "@/features/navbar/components/Navbar";
 import type { Metadata } from "next";
 import { ltSuperior } from "./fonts";
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${ltSuperior.className} antialiased leading-[100%]`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
